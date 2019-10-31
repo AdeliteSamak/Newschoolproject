@@ -17,13 +17,13 @@ let softpen_image = document.querySelector("#mysoftpen");
 function changeSrc() {
     console.log("function to change image.src");
     // if the image is still
-    if (softpen_image.getAttribute('src') == "softpen_stopped.gif") {
+    if (softpen_image.getAttribute('src') == "../adidas.png") {
         // make it move
-        softpen_image.src = "softpen_active.gif";
+        softpen_image.src = "../android.jpeg";
         // change the text of the button
         on_off_switch.textContent = "Turn it off";
     } else {
-        softpen_image.src = "softpen_stopped.gif";
+        softpen_image.src = "../android.jpeg";
         on_off_switch.textContent = "Turn the gif on";
     }
 }
